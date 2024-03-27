@@ -11,12 +11,12 @@ fir_part_day = []
 sec_part_day = []
 
 for i in reader:
-    """задаем и определяем по времни кому в какой список попасть"""
+    """задаем и определяем по времени кому в какой список попасть"""
     cur_hour, cur_min, cur_sec = list(map(int, i[-2].split(':')))
     if cur_hour > 12:
         sec_part_day.append(i)
     elif cur_hour == 12:
-        """неизвестно вклбчиельно 1 минута или нет, ставим включительно"""
+        """неизвестно включительно 1 минута или нет, ставим включительно"""
         if cur_min >= 1:
             sec_part_day.append(i)
         else:

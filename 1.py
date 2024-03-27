@@ -29,7 +29,7 @@ with open('astronaut_time.txt', encoding='utf8') as file, open('new_time.csv', '
     for upload in upload_data:
         writer.writerow(upload)
 
-    """выводим данные о кабине"""
+    """выводим данные о нужной кабине"""
     for i in upload_data:
         if i[2] == '98-OYE':
             print(f'{i[-1]} действительное время для каюты: {i[2]}')

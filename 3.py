@@ -17,4 +17,5 @@ while data != 'none':
             break
     else:
         print('В этой каюте все хорошо')
+    """обновляем данные из консоли"""
     data = input()
